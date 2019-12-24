@@ -1,0 +1,29 @@
+package mr;
+
+import Constant.Constant;
+import mr.utl.GetMRReturnResult;
+
+import java.util.List;
+
+/**
+ * describe:
+ *
+ * @author phantom
+ * @date 2019/12/18
+ */
+public class MR17 implements MR {
+    @Override
+    public String obtainFollowJsonString(int testCaseIndex) {
+        return Constant.getGeJsonObject().generateFollowJsonString4MR17(testCaseIndex);
+    }
+
+    @Override
+    public boolean obtainFollowJBFile(int testCaseIndex) {
+        return true;
+    }
+
+    @Override
+    public boolean verifyResults(int testCaseIndex, String mutantName) {
+        return false;
+    }
+}
