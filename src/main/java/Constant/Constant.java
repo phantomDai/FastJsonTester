@@ -61,6 +61,8 @@ public class Constant {
 
       public static String sourcePath = "testsuite.pool.";
 
+      public static final int K = 10;
+
 
       public static int[] getRAPTBoundary(){
             List<List<Integer>> partition = new Partition().getPartition();
